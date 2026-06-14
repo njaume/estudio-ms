@@ -10,15 +10,6 @@ function InstagramIcon({ size = 18 }: { size?: number }) {
   );
 }
 
-function LinkedinIcon({ size = 18 }: { size?: number }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-      <rect x="2" y="9" width="4" height="12" />
-      <circle cx="4" cy="4" r="2" />
-    </svg>
-  );
-}
 
 const navLinks = [
   { label: "Inicio", href: "#inicio" },
@@ -118,18 +109,13 @@ export default function Footer() {
           {/* Social */}
           <div className="flex items-center gap-4" aria-label="Redes sociales">
             <a
-              href="#"
+              href="https://www.instagram.com/estudio.juridicomys/"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Instagram de M&S Estudio Jurídico"
               className="text-warm-gray hover:text-gold transition-colors duration-200"
             >
               <InstagramIcon size={18} />
-            </a>
-            <a
-              href="#"
-              aria-label="LinkedIn de M&S Estudio Jurídico"
-              className="text-warm-gray hover:text-gold transition-colors duration-200"
-            >
-              <LinkedinIcon size={18} />
             </a>
           </div>
         </div>
