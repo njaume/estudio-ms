@@ -52,6 +52,37 @@ export default function Hero2() {
         />
       )}
 
+      {/* ── Grain texture ── */}
+      <svg
+        className="absolute inset-0 w-full h-full pointer-events-none"
+        style={{ opacity: 0.07, zIndex: 1 }}
+        aria-hidden="true"
+      >
+        <filter id="hero-grain">
+          <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="4" stitchTiles="stitch" />
+          <feColorMatrix type="saturate" values="0" />
+        </filter>
+        <rect width="100%" height="100%" filter="url(#hero-grain)" />
+      </svg>
+
+      {/* ── Corner accents ── */}
+      <div className="absolute top-8 left-8 w-12 h-12 pointer-events-none" style={{ zIndex: 2 }} aria-hidden="true">
+        <div className="absolute top-0 left-0 w-full h-px bg-gold/60" />
+        <div className="absolute top-0 left-0 h-full w-px bg-gold/60" />
+      </div>
+      <div className="absolute top-8 right-8 w-12 h-12 pointer-events-none" style={{ zIndex: 2 }} aria-hidden="true">
+        <div className="absolute top-0 right-0 w-full h-px bg-gold/60" />
+        <div className="absolute top-0 right-0 h-full w-px bg-gold/60" />
+      </div>
+      <div className="absolute bottom-8 left-8 w-12 h-12 pointer-events-none" style={{ zIndex: 2 }} aria-hidden="true">
+        <div className="absolute bottom-0 left-0 w-full h-px bg-gold/60" />
+        <div className="absolute bottom-0 left-0 h-full w-px bg-gold/60" />
+      </div>
+      <div className="absolute bottom-8 right-8 w-12 h-12 pointer-events-none" style={{ zIndex: 2 }} aria-hidden="true">
+        <div className="absolute bottom-0 right-0 w-full h-px bg-gold/60" />
+        <div className="absolute bottom-0 right-0 h-full w-px bg-gold/60" />
+      </div>
+
       {/* ── Línea dorada top ── */}
       <motion.div
         initial={{ scaleX: 0 }}
