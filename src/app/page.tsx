@@ -1,4 +1,5 @@
-import HeroSwitcher from "@/components/HeroSwitcher";
+import Navbar2 from "@/components/layout/Navbar2";
+import Hero2 from "@/components/sections/Hero2";
 import Footer from "@/components/layout/Footer";
 import About from "@/components/sections/About";
 import Services from "@/components/sections/Services";
@@ -11,7 +12,8 @@ import WhatsAppFAB from "@/components/WhatsAppFAB";
 export default function HomePage() {
   return (
     <>
-      <HeroSwitcher />
+      <Navbar2 />
+      <Hero2 />
       <main>
         <About />
         <Services />

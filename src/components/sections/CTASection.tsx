@@ -69,7 +69,7 @@ export default function CTASection() {
           transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           className="text-stone/60 text-lg md:text-xl leading-relaxed mb-12 max-w-2xl mx-auto"
         >
-          La primera consulta es sin costo. Contanos tu situación y te
+          Contanos tu situación y te
           orientamos con claridad y sin compromiso.
         </motion.p>
 

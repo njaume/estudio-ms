@@ -21,26 +21,26 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Dirección",
-    value: "[Calle y número], Paraná, Entre Ríos",
+    value: "Santa Fe N°322, PB, Of. \"A\", Paraná · 9 de Julio N°481, Diamante",
     href: "https://maps.google.com",
   },
   {
     icon: Phone,
     label: "Teléfono",
-    value: "+54 343 XXX-XXXX",
-    href: "tel:+5434300000000",
+    value: "+54 3435 169006 / +54 3436 235369",
+    href: "tel:+543435169006",
   },
   {
     icon: MessageSquare,
     label: "WhatsApp",
-    value: "+54 343 XXX-XXXX",
-    href: "https://wa.me/5434300000000",
+    value: "+54 3435 169006 / +54 3436 235369",
+    href: "https://wa.me/543435169006",
   },
   {
     icon: Mail,
     label: "Email",
-    value: "consultas@msestudiojuridico.com.ar",
-    href: "mailto:consultas@msestudiojuridico.com.ar",
+    value: "estudiomartinosantilli@gmail.com",
+    href: "mailto:estudiomartinosantilli@gmail.com",
   },
 ];
 
@@ -173,9 +173,9 @@ export default function Contact() {
               <p className="text-xs text-warm-gray leading-relaxed">
                 M&S Estudio Jurídico
                 <br />
-                Colegio de Abogados de Paraná, Entre Ríos
+                Paraná / Diamante, Entre Ríos
                 <br />
-                Lunes a viernes, 9:00 a 18:00 hs.
+                Atención de lunes a viernes
               </p>
             </div>
           </motion.div>

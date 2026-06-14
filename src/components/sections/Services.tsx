@@ -8,55 +8,55 @@ const services = [
     number: "01",
     title: "Derecho Civil",
     description:
-      "Contratos, daños, obligaciones y relaciones entre particulares. Te ayudamos a conocer tus derechos y actuar con fundamento.",
+      "Representamos a personas en conflictos vinculados a contratos, daños y perjuicios, incumplimientos de obligaciones, responsabilidad civil y demás relaciones jurídicas entre particulares.",
   },
   {
     number: "02",
     title: "Derecho de Familia",
     description:
-      "Divorcios, separaciones, alimentos, guarda y todo lo relacionado con el bienestar familiar. Con discreción y humanidad.",
+      "Asesoramos en divorcios, alimentos, cuidado personal de hijos, régimen de comunicación, uniones convivenciales y demás conflictos familiares.",
   },
   {
     number: "03",
     title: "Sucesiones",
     description:
-      "Herencias, declaratorias y división de bienes. Guiamos a las familias en cada etapa del proceso sucesorio.",
+      "Gestionamos procesos sucesorios, declaratorias de herederos, particiones y división de bienes.",
   },
   {
     number: "04",
     title: "Accidentes de Tránsito",
     description:
-      "Lesiones, daños materiales y reclamos ante aseguradoras. Defendemos tus derechos desde el primer momento.",
+      "Representamos a personas que han sufrido lesiones o daños materiales como consecuencia de accidentes de tránsito. Nos encargamos de los reclamos ante aseguradoras extrajudiciales, acciones judiciales por lesiones o daños materiales.",
   },
   {
     number: "05",
     title: "Contratos",
     description:
-      "Redacción, revisión y negociación de contratos. Prevenir conflictos es siempre la mejor estrategia.",
+      "Brindamos asesoramiento en la redacción, revisión y negociación de contratos civiles y comerciales.",
   },
   {
     number: "06",
     title: "Mediación",
     description:
-      "Resolución de conflictos sin necesidad de juicio. Rápido, económico y preservando relaciones.",
+      "Intervenimos en procesos de mediación orientados a la resolución pacífica de conflictos. A través del diálogo y la negociación, buscamos acuerdos que permitan evitar litigios innecesarios y preservar los vínculos entre las partes.",
   },
   {
     number: "07",
     title: "Derecho Inmobiliario",
     description:
-      "Compraventa, alquileres y conflictos de propiedad. Seguridad jurídica en cada operación.",
+      "Asesoramos en operaciones de compraventa, alquileres, transferencias y conflictos relacionados con bienes inmuebles.",
   },
   {
     number: "08",
-    title: "Amparos",
+    title: "Amparos de salud",
     description:
-      "Protección de derechos fundamentales ante organismos públicos y privados. Actuamos con rapidez cuando los derechos están en juego.",
+      "Intervenimos en acciones de amparo vinculadas al acceso a prestaciones médicas, medicamentos, tratamientos, estudios y coberturas de obras sociales y empresas de medicina prepaga.",
   },
   {
     number: "09",
     title: "Derecho Previsional",
     description:
-      "Jubilaciones, pensiones y reajustes. Asesoramiento para acceder a los beneficios que te corresponden.",
+      "Gestionamos trámites jubilatorios, pensiones, reajustes, reconocimiento de servicios y demás cuestiones previsionales.",
   },
 ];
 

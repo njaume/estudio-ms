@@ -8,17 +8,17 @@ const members = [
     initials: "MS",
     name: "Martina Inés Santilli",
     role: "Abogada",
-    matricula: "Mat. C.A.P. XXXX",
-    specialties: ["Derecho de Familia", "Sucesiones", "Derecho Civil"],
-    bio: "Abogada egresada de [Universidad]. Especialista en Derecho de Familia y Sucesiones. Comprometida con el acompañamiento integral de cada cliente, brinda asesoramiento claro y empático en cada etapa del proceso.",
+    matricula: "Mat. 11251",
+    specialties: ["Derecho de Familia", "Sucesiones", "Derecho Previsional"],
+    bio: "Abogada egresada de la Universidad Católica Argentina. Escribana y Mediadora. Especialista en Derecho Sucesorio. Comprometida con el acompañamiento integral de cada cliente, brinda asesoramiento claro y empático en cada etapa del proceso.",
   },
   {
     initials: "LM",
     name: "Luis Ernesto Martino",
     role: "Abogado",
-    matricula: "Mat. C.A.P. XXXX",
+    matricula: "Mat. 11252",
     specialties: ["Derecho Civil", "Accidentes de Tránsito", "Contratos"],
-    bio: "Abogado egresado de [Universidad]. Especialista en Derecho Civil y Accidentes de Tránsito. Con foco en la defensa de los derechos de las personas, trabaja con rigor profesional y cercanía humana.",
+    bio: "Abogado egresado de la Universidad Católica Argentina. Escribano y Mediador. Desempeñándose principalmente en Derecho Civil y Accidentes de Tránsito. Con foco en la defensa de los derechos de las personas, trabaja con rigor profesional y cercanía humana.",
   },
 ];
 

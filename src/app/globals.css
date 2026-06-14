@@ -66,6 +66,16 @@
   --radius: 0.375rem;
 }
 
+/* ── Hero background image responsive filter ── */
+.hero-bg {
+  filter: blur(2px) brightness(0.5);
+}
+@media (min-width: 768px) {
+  .hero-bg {
+    filter: blur(4px) brightness(0.5);
+  }
+}
+
 @layer base {
   * {
     @apply border-border;

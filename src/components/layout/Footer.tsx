@@ -48,8 +48,8 @@ export default function Footer() {
               />
             </div>
             <p className="text-sm text-warm-gray leading-relaxed max-w-xs">
-              Asesoramiento jurídico claro, cercano y profesional en Paraná,
-              Entre Ríos. Abogados en Paraná para personas y familias.
+              Asesoramiento jurídico claro, cercano y profesional en Paraná y
+              Diamante, Entre Ríos.
             </p>
           </div>
 
@@ -78,21 +78,29 @@ export default function Footer() {
               Contacto
             </p>
             <ul className="space-y-3 text-sm text-warm-gray" role="list">
-              <li>Paraná, Entre Ríos</li>
+              <li>Paraná / Diamante, Entre Ríos</li>
               <li>
                 <a
-                  href="tel:+5434300000000"
+                  href="tel:+543435169006"
                   className="hover:text-gold transition-colors"
                 >
-                  +54 343 XXX-XXXX
+                  +54 3435 169006
                 </a>
               </li>
               <li>
                 <a
-                  href="mailto:consultas@msestudiojuridico.com.ar"
+                  href="tel:+543436235369"
                   className="hover:text-gold transition-colors"
                 >
-                  consultas@msestudio<br />juridico.com.ar
+                  +54 3436 235369
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:estudiomartinosantilli@gmail.com"
+                  className="hover:text-gold transition-colors"
+                >
+                  estudiomartinosantilli<br />@gmail.com
                 </a>
               </li>
             </ul>
@@ -104,7 +112,7 @@ export default function Footer() {
           <p className="text-xs text-warm-gray text-center sm:text-left">
             &copy; {year} M&S Estudio Jurídico. Todos los derechos reservados.
             <span className="mx-2 text-warm-gray/40">|</span>
-            Colegio de Abogados de Paraná, Entre Ríos.
+            Paraná / Diamante, Entre Ríos.
           </p>
 
           {/* Social */}

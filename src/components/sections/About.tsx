@@ -29,6 +29,9 @@ export default function About() {
               <p className="text-xs font-medium tracking-[0.25em] text-warm-gray uppercase">
                 Sobre el estudio
               </p>
+              <p className="text-sm italic text-warm-gray/80 mt-3 leading-snug max-w-[18ch]">
+                &ldquo;Detrás de cada expediente hay una historia que merece ser escuchada.&rdquo;
+              </p>
             </div>
 
             {/* Decorative quote mark */}
@@ -49,7 +52,7 @@ export default function About() {
               transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
               className="font-serif text-3xl md:text-4xl font-semibold text-charcoal leading-[1.2] mb-8"
             >
-              Un estudio jurídico que trabaja para personas reales.
+              Estudio Jurídico con enfoque humano que escucha y resuelve.
             </motion.h2>
 
             <motion.div
@@ -60,16 +63,17 @@ export default function About() {
             >
               <p className="text-base md:text-lg">
                 Fundamos M&S con una convicción: el derecho debe ser accesible.
-                No solo en el sentido económico, sino en el humano. Creemos que
-                cada consulta merece tiempo, escucha y una respuesta clara —
-                sin vueltas ni tecnicismos.
+                No Creemos que cada consulta merece tiempo, escucha y una
+                respuesta clara, sin vueltas ni tecnicismos.
               </p>
               <p className="text-base md:text-lg">
-                Trabajamos con personas y familias que enfrentan situaciones
-                que muchas veces no eligieron: una herencia complicada, un
-                accidente, una separación, un contrato mal firmado. En esos
-                momentos, nuestro trabajo es acompañar con criterio y
-                compromiso.
+                Acompañamos a personas y familias en momentos que suelen generar
+                incertidumbre: una sucesión, un accidente de tránsito, una
+                separación, un conflicto contractual o cualquier situación que
+                requiera asesoramiento legal. Nuestro compromiso es brindar
+                soluciones jurídicas con profesionalismo, cercanía y
+                responsabilidad para que cada cliente pueda tomar decisiones con
+                tranquilidad y confianza.
               </p>
             </motion.div>
 

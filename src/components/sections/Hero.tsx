@@ -80,7 +80,7 @@ export default function Hero() {
           {...fade(0.3)}
           className="text-[10px] font-medium tracking-[0.3em] text-warm-gray uppercase mb-6"
         >
-          Paraná &middot; Entre Ríos
+          Entre Ríos &middot; Argentina
         </motion.p>
 
         {/* Headline — 2 líneas limpias */}

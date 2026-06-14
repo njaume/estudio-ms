@@ -42,26 +42,15 @@ export default function Hero2() {
           <source src="/hero-bg.mp4" type="video/mp4" />
         </video>
       ) : (
-        <Image
-          src="/hero-bg.jpg"
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center"
-          style={{ filter: "blur(4px) brightness(0.5)", transform: "scale(1.06)" }}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(ellipse 120% 80% at 60% 40%, #2a2318 0%, #1a1610 40%, #101216 100%)",
+          }}
+          aria-hidden="true"
         />
       )}
-
-      {/* ── Overlay oscuro con degradado ── */}
-      <div
-        className="absolute inset-0"
-        style={{
-          background:
-            "linear-gradient(160deg, rgba(16,18,22,0.55) 0%, rgba(16,18,22,0.72) 50%, rgba(16,18,22,0.85) 100%)",
-        }}
-        aria-hidden="true"
-      />
 
       {/* ── Línea dorada top ── */}
       <motion.div
@@ -117,7 +106,7 @@ export default function Hero2() {
           {...fade(0.28)}
           className="text-[10px] font-medium tracking-[0.3em] text-white/60 uppercase mb-7"
         >
-          Paraná &middot; Entre Ríos &middot; Argentina
+          Entre Ríos &middot; Argentina
         </motion.p>
 
         {/* Headline */}
