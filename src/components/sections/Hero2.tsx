@@ -66,19 +66,19 @@ export default function Hero2() {
       </svg>
 
       {/* ── Corner accents ── */}
-      <div className="absolute top-8 left-8 w-12 h-12 pointer-events-none" style={{ zIndex: 2 }} aria-hidden="true">
+      <div className="hidden md:block absolute top-8 left-8 w-12 h-12 pointer-events-none" style={{ zIndex: 2 }} aria-hidden="true">
         <div className="absolute top-0 left-0 w-full h-px bg-gold/60" />
         <div className="absolute top-0 left-0 h-full w-px bg-gold/60" />
       </div>
-      <div className="absolute top-8 right-8 w-12 h-12 pointer-events-none" style={{ zIndex: 2 }} aria-hidden="true">
+      <div className="hidden md:block absolute top-8 right-8 w-12 h-12 pointer-events-none" style={{ zIndex: 2 }} aria-hidden="true">
         <div className="absolute top-0 right-0 w-full h-px bg-gold/60" />
         <div className="absolute top-0 right-0 h-full w-px bg-gold/60" />
       </div>
-      <div className="absolute bottom-8 left-8 w-12 h-12 pointer-events-none" style={{ zIndex: 2 }} aria-hidden="true">
+      <div className="hidden md:block absolute bottom-8 left-8 w-12 h-12 pointer-events-none" style={{ zIndex: 2 }} aria-hidden="true">
         <div className="absolute bottom-0 left-0 w-full h-px bg-gold/60" />
         <div className="absolute bottom-0 left-0 h-full w-px bg-gold/60" />
       </div>
-      <div className="absolute bottom-8 right-8 w-12 h-12 pointer-events-none" style={{ zIndex: 2 }} aria-hidden="true">
+      <div className="hidden md:block absolute bottom-8 right-8 w-12 h-12 pointer-events-none" style={{ zIndex: 2 }} aria-hidden="true">
         <div className="absolute bottom-0 right-0 w-full h-px bg-gold/60" />
         <div className="absolute bottom-0 right-0 h-full w-px bg-gold/60" />
       </div>
