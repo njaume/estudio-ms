@@ -21,8 +21,10 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Dirección",
-    value: "Santa Fe N°322, PB, Of. \"A\", Paraná · 9 de Julio N°481, Diamante",
-    href: "https://maps.google.com",
+    locations: [
+      { city: "Paraná", address: "Santa Fe N°322, Planta Baja, Oficina \"A\"", href: "https://maps.google.com/?q=Santa+Fe+322+Paraná+Entre+Ríos" },
+      { city: "Diamante", address: "9 de Julio N°481", href: "https://maps.google.com/?q=9+de+Julio+481+Diamante+Entre+Ríos" },
+    ],
   },
   {
     icon: Phone,
@@ -142,17 +144,49 @@ export default function Contact() {
             <div className="space-y-6">
               {contactInfo.map((item) => {
                 const Icon = item.icon;
+                if (item.locations) {
+                  return (
+                    <div key={item.label} className="flex items-start gap-4">
+                      <div
+                        className="mt-0.5 w-9 h-9 shrink-0 flex items-center justify-center border border-[#E5E0D6]"
+                        aria-hidden="true"
+                      >
+                        <Icon size={16} className="text-gold" strokeWidth={1.5} />
+                      </div>
+                      <div>
+                        <p className="text-xs text-warm-gray uppercase tracking-wide mb-2">
+                          {item.label}
+                        </p>
+                        <div className="space-y-1.5">
+                          {item.locations.map((loc) => (
+                            <a
+                              key={loc.city}
+                              href={loc.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="flex items-baseline gap-2 hover:opacity-80 transition-opacity"
+                              aria-label={`${loc.city}: ${loc.address}`}
+                            >
+                              <span className="text-xs font-semibold text-gold uppercase tracking-wide shrink-0">{loc.city}</span>
+                              <span className="text-sm text-charcoal font-medium">{loc.address}</span>
+                            </a>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  );
+                }
                 return (
                   <a
                     key={item.label}
                     href={item.href}
-                    target={item.href.startsWith("http") ? "_blank" : undefined}
-                    rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                    target={item.href!.startsWith("http") ? "_blank" : undefined}
+                    rel={item.href!.startsWith("http") ? "noopener noreferrer" : undefined}
                     className="group flex items-start gap-4 hover:opacity-90 transition-opacity"
                     aria-label={`${item.label}: ${item.value}`}
                   >
                     <div
-                      className="mt-0.5 w-9 h-9 flex-shrink-0 flex items-center justify-center border border-[#E5E0D6] group-hover:border-gold transition-colors duration-300"
+                      className="mt-0.5 w-9 h-9 shrink-0 flex items-center justify-center border border-[#E5E0D6] group-hover:border-gold transition-colors duration-300"
                       aria-hidden="true"
                     >
                       <Icon size={16} className="text-gold" strokeWidth={1.5} />
