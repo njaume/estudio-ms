@@ -1,11 +1,13 @@
 "use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 
 const members = [
   {
-    initials: "MS",
+    photo: "/profile_2.webp",
+    imageClass: "object-cover",
     name: "Martina Inés Santilli",
     role: "Abogada",
     matricula: "Mat. 11251",
@@ -13,7 +15,8 @@ const members = [
     bio: "Abogada egresada de la Universidad Católica Argentina. Escribana y Mediadora. Especialista en Derecho Sucesorio. Comprometida con el acompañamiento integral de cada cliente, brinda asesoramiento claro y empático en cada etapa del proceso.",
   },
   {
-    initials: "LM",
+    photo: "/profile_1.webp",
+    imageClass: "object-cover scale-[1.4] object-top",
     name: "Luis Ernesto Martino",
     role: "Abogado",
     matricula: "Mat. 11252",
@@ -70,18 +73,15 @@ export default function Team() {
               className="bg-white p-10 md:p-12"
               aria-label={`Perfil de ${member.name}`}
             >
-              {/* Photo placeholder */}
-              <div
-                className="w-full aspect-[4/3] bg-placeholder-bg flex items-center justify-center mb-8 overflow-hidden"
-                role="img"
-                aria-label={`Foto de ${member.name} — a completar`}
-              >
-                <span
-                  className="font-serif text-5xl font-semibold text-charcoal/30 select-none"
-                  aria-hidden="true"
-                >
-                  {member.initials}
-                </span>
+              {/* Photo */}
+              <div className="relative w-full aspect-3/4 mb-8 overflow-hidden bg-placeholder-bg">
+                <Image
+                  src={member.photo}
+                  alt={`Foto de ${member.name}`}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className={member.imageClass}
+                />
               </div>
 
               {/* Info */}
