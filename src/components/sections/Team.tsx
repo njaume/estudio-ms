@@ -16,7 +16,7 @@ const members = [
   },
   {
     photo: "/profile_1.webp",
-    imageClass: "object-cover scale-[1.4] object-top",
+    imageClass: "object-cover",
     name: "Luis Ernesto Martino",
     role: "Abogado",
     matricula: "Mat. 11252",
