@@ -80,6 +80,7 @@ export default function Contact() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
 
   const {
     register,
@@ -90,11 +91,21 @@ export default function Contact() {
 
   const onSubmit = async (data: FormData) => {
     setSubmitting(true);
-    await new Promise((r) => setTimeout(r, 1000));
-    console.log("Form submission:", data);
-    setSubmitting(false);
-    setSubmitted(true);
-    reset();
+    setSubmitError(false);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      if (!res.ok) throw new Error();
+      setSubmitted(true);
+      reset();
+    } catch {
+      setSubmitError(true);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const baseInputClass =
@@ -308,6 +319,12 @@ export default function Contact() {
                 <p className="text-xs text-warm-gray">
                   Tu información es confidencial y no se comparte con terceros.
                 </p>
+
+                {submitError && (
+                  <p className="text-xs text-red-500" role="alert">
+                    Hubo un error al enviar el mensaje. Por favor intentá de nuevo o escribinos por WhatsApp.
+                  </p>
+                )}
 
                 <button
                   type="submit"
